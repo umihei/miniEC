@@ -54,6 +54,14 @@ a{
 a:hover{
     color: #ff8000;
 }
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+li {
+    margin-top: 1rem;
+}
 /* header */
 header a{
     color: #ffffff;
@@ -74,12 +82,24 @@ a.brand{
 .row.center {
     justify-content: center;
 }
+.row.top {
+    align-items: flex-start;
+}
+.col-1 {
+    flex: 1 1 25rem;
+}
+.col-2 {
+    flex: 2 1 50rem;
+}
 /* image */
 img {
     border-radius: 0.5rem;
 }
 img.medium {
     max-width: 29rem;
+    width: 100%;
+}
+img.large {
     width: 100%;
 }
 
