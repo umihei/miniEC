@@ -8,26 +8,25 @@ import HomeScreen from './screens/HomeScreen';
 function App() {
   return (
       <BrowserRouter>
-    <div className="grid-container">
-        <header className="row">
-            <div>
-                <a className="brand" href="/">miniEC</a>
-            </div>
-            <div>
-                <a href="/cart">Cart</a>
-                <a href="/signin">Sign In</a>
-            </div>
-        </header>
-        <main>
-            <Route path="/" component={HomeScreen} exact></Route>
-            <Route path="/product/1" componet={ProductScreen}></Route>
+        <div className="grid-container">
+            <header className="row">
+                <div>
+                    <a className="brand" href="/">miniEC</a>
+                </div>
+                <div>
+                    <a href="/cart">Cart</a>
+                    <a href="/signin">Sign In</a>
+                </div>
+            </header>
+            <main>
+                <Route path="/" component={HomeScreen} exact></Route>
+                <Route path="/product/:id" component={ProductScreen} exact></Route>
+            </main>
+            <footer className="row center">
+                All rights reserved
 
-        </main>
-        <footer className="row center">
-            All rights reserved
-
-        </footer>
-    </div>
+            </footer>
+        </div>
     </BrowserRouter>
     );
 }
